@@ -20,3 +20,34 @@ b_obj = B()
 b_obj.show()
 b_obj.show2()
 b_obj.show3()
+
+
+# Multiple Inheritance
+
+class Fly:
+
+    def fly(self):
+        print("Player can fly")
+
+
+class Jump:
+
+    def jump(self):
+        print("Player can jump")
+
+
+class Swim:
+
+    def swim(self):
+        print("Player can swim")
+
+
+class Player(Fly, Jump, Swim):
+    pass
+
+
+player = Player()
+
+player.fly()
+player.jump()
+player.swim()
